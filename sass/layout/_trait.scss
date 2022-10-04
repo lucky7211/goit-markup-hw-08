@@ -1,0 +1,217 @@
+
+// ===============================================mobile=============================================
+
+@media screen and (min-width:480px), (max-width:767px) {
+
+.trait__title { 
+    text-align: center;
+}
+
+.trait-list__item {
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-size: var(--primary-text-size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 450px;
+}
+
+.trait-list__item:last-child {
+    margin-bottom: 0px;
+}
+
+.trait-list__title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-weight: var(--bold);
+    font-size: var(--primary-text-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.icon-div {
+    width: 450px;
+    height: 120px;
+    padding: 25px 190px;
+    background-color: var(--back-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+
+}
+
+.icon-div__item {
+    display: block;
+    width: 70px;
+    height: 70px;
+    
+}
+}
+// =====================================================tablet==========================================================
+
+@media screen and (min-width:768px)and(max-width:1200px) {
+    .trait__title {
+        text-align: center;
+    }
+    
+    .trait-list {
+        display:flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    .trait-list__item {
+        // margin-right: 30px;
+        color: var(--secondary-color);
+        font-family: var(--main-font);
+        font-size: var(--primary-text-size);
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        width: 354px;
+    } 
+    // .trait-list__item:last-child {
+    //     margin-right: 0px;
+    // }
+    .trait-list__title {
+        margin-bottom: 10px;
+        color: var(--primary-color);
+        font-family: var(--main-font);
+        font-style: normal;
+        font-weight: var(--bold);
+        font-size: var(--primary-text-size);
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    .icon-div {
+        width: 354px;
+        height: 120px;
+        padding: 25px 142px;
+        background-color: var(--back-color);
+        margin-bottom: 30px;
+        border-radius: 4px;
+    
+    
+    }
+    
+    .icon-div__item {
+        display: block;
+        width: 70px;
+        height: 70px;
+        
+    } 
+}
+
+// ===================================================desktop========================================================
+
+@media screen and (min-width:1200px) {
+     .trait__title {
+    text-align: center;
+}
+
+.trait-list {
+    display:flex;
+}
+
+.trait-list__item {
+    margin-right: 30px;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-size: var(--primary-text-size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+}
+
+.trait-list__item:last-child {
+    margin-right: 0px;
+}
+
+.trait-list__title {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: var(--bold);
+    font-size: var(--primary-text-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.icon-div {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    background-color: var(--back-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+
+}
+
+.icon-div__item {
+    display: block;
+    width: 70px;
+    height: 70px;
+    
+}
+}
+
+// .trait__title {
+//     /* display: none; */
+//     text-align: center;
+// }
+
+// .trait-list {
+//     display:flex;
+// }
+
+// .trait-list__item {
+//     margin-right: 30px;
+//     color: var(--secondary-color);
+//     font-family: var(--main-font);
+//     font-size: var(--primary-text-size);
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     width: 270px;
+// }
+
+// .trait-list__item:last-child {
+//     margin-right: 0px;
+// }
+
+// .trait-list__title {
+//     margin-bottom: 10px;
+//     color: var(--primary-color);
+//     font-family: var(--main-font);
+//     font-style: normal;
+//     font-weight: var(--bold);
+//     font-size: var(--primary-text-size);
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+// }
+
+
+// .icon-div {
+//     width: 270px;
+//     height: 120px;
+//     padding: 25px 100px;
+//     background-color: var(--back-color);
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+
+
+// }
+
+// .icon-div__item {
+//     display: block;
+//     width: 70px;
+//     height: 70px;
+    
+// }

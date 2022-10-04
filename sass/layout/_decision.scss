@@ -1,0 +1,143 @@
+.decision {
+    // padding: 118px 0px;
+    // max-width: 480px;
+    // height: 400px;
+    // margin: 0 auto;
+    background-repeat: no-repeat;
+    background-color: var(--dark-gray);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../imeges/decision/hero-mobile-img.jpg ');
+    background-size: cover;
+}
+
+// @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+//     .decision {
+//         background-image: url('../imeges/decision/hero-mobile-img@2x.jpg');
+//     }
+// }
+
+@media screen and (min-width:480px),(max-width:767px) {
+    .decision {
+        padding: 118px 0px;
+        max-width: 480px;
+        height: 400px;
+        margin: 0 auto;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../imeges/decision/hero-mobile-img.jpg ');
+    }
+    .decision__title {
+        width: 360px;
+        margin: 0 auto;;
+        margin-bottom: 30px;
+        font-family: var(--main-font);
+        
+        font-weight: var(--extra-bold);
+        font-size: var(--title-size);
+        line-height: 1.62;
+        
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        color: var(--common-white);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .decision {
+        max-width: 768px;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../imeges/decision/hero-tablet-img.jpg ');
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .decision {
+        padding: 200px 0px;
+        max-width: 1600px;
+        height: 600px;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../imeges/decision/hero-desktop-img.jpg ');
+    }
+    .decision__title {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: var(--main-font);
+    font-weight:var(--extra-bold);
+    font-size: var(--primary-title-size);
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--common-white);
+}
+}
+
+    .decision__button {
+        padding: 10px 24px; 
+        
+        font-family: var(--main-font);
+        font-weight: var(--bold);
+        font-size: var(--secondary-text-size);
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+    
+        background-color: var(--accent-color);
+        color: var(--common-white);
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .decision__button:hover,
+    .decision__button:focus {
+        background-color: var(--button-hover-color);
+        color: var(--common-white);
+        box-shadow: 0px 4px 4px var(--shadow-color);
+    }
+
+// ========================================================================================================
+// .decision {
+//     padding: 200px 0px;
+//     max-width: 1600px;
+//     height: 600px;
+//     margin: 0 auto;
+//     background-repeat: no-repeat;
+//     background-color: var(--dark-gray);
+//     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imeges/section-img/img.jpg);
+//     background-size: cover;
+
+
+// }
+
+// .decision__title {
+//     width: 696px;
+//     margin: 0 auto;
+//     margin-bottom: 30px;
+//     font-family: var(--main-font);
+//     font-weight:var(--extra-bold);
+//     font-size: var(--primary-title-size);
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color:var(--common-white);
+// }
+
+// .decision__button {
+//     padding: 10px 32px; 
+    
+//     font-family: var(--main-font);
+//     font-weight: var(--bold);
+//     font-size: var(--secondary-text-size);
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
+
+//     background-color: var(--accent-color);
+//     color: var(--common-white);
+
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .decision__button:hover,
+// .decision__button:focus {
+//     background-color: var(--button-hover-color);
+//     color: var(--common-white);
+//     box-shadow: 0px 4px 4px var(--shadow-color);
+// }
