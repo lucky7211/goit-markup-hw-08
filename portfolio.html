@@ -41,6 +41,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./imeges/icon.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contact-list list">
           <li class="contact-list__item">
             <a href="maito:info@devstudio.com" class="contact-list__link link"
@@ -58,9 +63,34 @@
           </li>
         </ul>
       </div>
+      <!-- =============================================mobile-menu=================================== -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg aria-label="іконка-хрестик" class="mobile-menu__close-icon">
+              <use href="./imeges/icon.svg#close-icon"></use>
+            </svg>
+          </button>
+          <ul class="mobile-navigation list">
+            <li class="mobile-navigation__item"><a class="mobile-navigation__link link " href="./index.html">Студія</a></li>
+            <li class="mobile-navigation__item current"><a href="./portfolio.html" class="mobile-navigation__link link">Портфоліо</a></li>
+            <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__link link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-contact-list list">
+            <li class="mobile-contact-list__item"><a href="tel:+380961111111"></a>+38 096 111 11 11</li>
+            <li class="mobile-contact-list__item mobile-contact-list__mail"><a href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list__item"><a class="mobile-social-list__link" href="#"></a>Instagram</li>
+            <li class="mobile-social-list__item"><a class="mobile-social-list__link" href="#"></a>Twitter</li>
+            <li class="mobile-social-list__item"><a class="mobile-social-list__link" href="#"></a>Facebook</li>
+            <li class="mobile-social-list__item"><a class="mobile-social-list__link" href="#"></a>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="section portfolio">
+      <section class="section mobile-section portfolio">
         <div class="container">
           <h1 class="portfolio-title">Портфоліо</h1>
           <ul class="list btn-list">
@@ -84,7 +114,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/techno.jpg" alt="ноутбук" width="370" />
+                  <picture class="picture">
+                    <source srcset="../imeges/tech/desk-tech.jpg 1x, ../imeges/tech/desk-tech@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/tech/tab-tech.jpg 1x, ../imeges/tech/tab-tech@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/tech/mobile-tech.jpg 1x, ../imeges/tech/mobile-tech@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/techno.jpg" alt="ноутбук"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -100,11 +138,18 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
+                  <picture class="picture">
+                    <source srcset="../imeges/post/desk-post.jpg 1x, ../imeges/post/desk-post@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/post/tab-post.jpg 1x, ../imeges/post/tab-post@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/post/mobile-post.jpg 1x, ../imeges/post/mobile-post@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
                   <img
                     src="./imeges/poster.jpg"
                     alt="баскетболісти"
-                    width="370"
                   />
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -122,11 +167,18 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
+                  <picture class="picture">
+                    <source srcset="../imeges/rest/desk-rest.jpg 1x, ../imeges/rest/desk-rest@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/rest/tab-rest.jpg 1x, ../imeges/rest/tab-rest@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/rest/mobile-rest.jpg 1x, ../imeges/rest/mobile-rest@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
                   <img
                     src="./imeges/restaurant.jpg"
                     alt="реклама ресторана"
-                    width="370"
                   />
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -142,7 +194,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/prime.jpg" alt="наушники" width="370" />
+                  <picture>
+                    <source srcset="../imeges/project/desk-project.jpg 1x, ../imeges/project/desk-project@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/project/tab-project.jpg 1x, ../imeges/project/tab-project@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/project/mobile-project.jpg 1x, ../imeges/project/mobile-project@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/prime.jpg" alt="наушники"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -158,7 +218,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/boxes.jpg" alt="коробки" width="370" />
+                  <picture>
+                    <source srcset="../imeges/boxes/desk-boxes.jpg 1x, ../imeges/boxes/desk-boxes@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/boxes/tab-boxes.jpg 1x, ../imeges/boxes/tab-boxes@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/boxes/mobile-boxes.jpg 1x, ../imeges/boxes/mobile-boxes@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/boxes.jpg" alt="коробки"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -174,7 +242,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/screen.jpg" alt="монитор" width="370" />
+                  <picture>
+                    <source srcset="../imeges/inspiration/desk-inspiration.jpg 1x, ../imeges/inspiration/desk-inspiration@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/inspiration/tab-inspiration.jpg 1x, ../imeges/inspiration/tab-inspiration@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/inspiration/mobile-inspiration.jpg 1x, ../imeges/inspiration/mobile-inspiration@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/screen.jpg" alt="монитор"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -190,7 +266,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/edition.jpg" alt="книга" width="370" />
+                  <picture>
+                    <source srcset="../imeges/limited/desk-limited.jpg 1x, ../imeges/limited/desk-limited@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/limited/tab-limited.jpg 1x, ../imeges/limited/tab-limited@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/limited/mobile-limited.jpg 1x, ../imeges/limited/mobile-limited@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/edition.jpg" alt="книга"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -206,7 +290,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/lab.jpg" alt="этикетка" width="370" />
+                  <picture>
+                    <source srcset="../imeges/lab/desk-lab.jpg 1x, ../imeges/lab/desk-lab@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/lab/tab-lab.jpg 1x, ../imeges/lab/tab-lab@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/lab/mobile-lab.jpg 1x, ../imeges/lab/mobile-lab@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/lab.jpg" alt="этикетка"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -222,7 +314,15 @@
             <li class="project">
               <a href="#" class="project-link link">
                 <div class="project-link-wrapper">
-                  <img src="./imeges/netbook.jpg" alt="нетбук" width="370" />
+                  <picture>
+                    <source srcset="../imeges/busines/desk-busines.jpg 1x, ../imeges/busines/desk-busines@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <source srcset="../imeges/busines/tab-busines.jpg 1x, ../imeges/busines/tab-busines@2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../imeges/busines/mobile-busines.jpg 1x, ../imeges/busines/mobile-busines@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                  <img src="./imeges/netbook.jpg" alt="нетбук"/>
+                </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -338,5 +438,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
