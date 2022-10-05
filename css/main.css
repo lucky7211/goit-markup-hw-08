@@ -68,7 +68,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1309,6 +1309,7 @@ button {
     padding: 20px 24px;
     text-decoration: none;
     border: 1px solid var(--card-border-color);
+    flex-grow: 1;
   }
   .project-div-title {
     margin-bottom: 4px;
@@ -1328,7 +1329,9 @@ button {
     color: var(--secondary-color);
   }
   .project-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .project-link:hover,
 .project-link:focus {
