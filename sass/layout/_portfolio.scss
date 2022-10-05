@@ -1,6 +1,6 @@
 // ================================================mobile============================================
 
-@media screen and (min-width:480px) and (max-width:767px) {
+@media screen and (max-width:768px) {
     
 .portfolio-title {
     text-align: center;
@@ -37,13 +37,14 @@
 
 .btn:first-child {
     padding: 6px 25px;
+    margin-bottom: 15px;
 }
 
 
 .btn-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 
@@ -131,7 +132,7 @@
 
 
 // ========================================================tablet====================================================
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
     .portfolio-title {
         text-align: center;
         display: none;
@@ -191,8 +192,12 @@
         padding: 20px 24px;
         text-decoration: none;
         border: 1px solid var(--card-border-color);
-        flex-grow: 1;
+        width: 354px;
     
+    }
+
+    .tablet-div {
+        padding: 20px 24px 56px;
     }
     
     .project-div-title {
@@ -214,9 +219,10 @@
         color: var(--secondary-color);
     }
      .project-link {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
+        display: block;
+        // display: flex;
+        // flex-direction: column;
+        // height: 100%;
     } 
     
     .project-link:hover,
@@ -322,7 +328,6 @@
     padding: 20px 24px;
     text-decoration: none;
     border: 1px solid var(--card-border-color);
-
 }
 
 .project-div-title {

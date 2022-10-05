@@ -114,6 +114,7 @@
 
 .trait-list {
     display:flex;
+    flex-wrap: nowrap;
 }
 
 .trait-list__item {
@@ -162,56 +163,3 @@
 }
 }
 
-// .trait__title {
-//     /* display: none; */
-//     text-align: center;
-// }
-
-// .trait-list {
-//     display:flex;
-// }
-
-// .trait-list__item {
-//     margin-right: 30px;
-//     color: var(--secondary-color);
-//     font-family: var(--main-font);
-//     font-size: var(--primary-text-size);
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     width: 270px;
-// }
-
-// .trait-list__item:last-child {
-//     margin-right: 0px;
-// }
-
-// .trait-list__title {
-//     margin-bottom: 10px;
-//     color: var(--primary-color);
-//     font-family: var(--main-font);
-//     font-style: normal;
-//     font-weight: var(--bold);
-//     font-size: var(--primary-text-size);
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-// }
-
-
-// .icon-div {
-//     width: 270px;
-//     height: 120px;
-//     padding: 25px 100px;
-//     background-color: var(--back-color);
-//     margin-bottom: 30px;
-//     border-radius: 4px;
-
-
-// }
-
-// .icon-div__item {
-//     display: block;
-//     width: 70px;
-//     height: 70px;
-    
-// }

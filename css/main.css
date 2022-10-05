@@ -68,7 +68,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -132,14 +132,14 @@ button {
   .navigation__list {
     display: none;
   }
-  .contact-list {
-    display: none;
-  }
   .open-mobile-menu-btn {
     border: none;
     background-color: transparent;
     padding: 0;
     margin: 0;
+  }
+  .contact-list {
+    display: none;
   }
   .open-mobile-menu-btn__icon {
     line-height: 0;
@@ -150,6 +150,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -485,6 +490,7 @@ button {
   }
   .trait-list {
     display: flex;
+    flex-wrap: nowrap;
   }
   .trait-list__item {
     margin-right: 30px;
@@ -620,7 +626,7 @@ button {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -643,6 +649,7 @@ button {
   }
   .team-list {
     display: flex;
+    flex-wrap: nowrap;
   }
   .team-item {
     margin-right: 30px;
@@ -677,7 +684,7 @@ button {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px), (max-width: 480px) {
   .clients__title {
     text-align: center;
     font-family: var(--main-font);
@@ -725,7 +732,7 @@ button {
     width: 170px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .logo-address {
     text-align: center;
     margin-bottom: 60px;
@@ -1159,7 +1166,7 @@ button {
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .portfolio-title {
     text-align: center;
     display: none;
@@ -1190,11 +1197,12 @@ button {
   }
   .btn:first-child {
     padding: 6px 25px;
+    margin-bottom: 15px;
   }
   .btn-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
   }
   .btn-item:not(:last-child) {
     margin-right: 8px;
@@ -1260,7 +1268,7 @@ button {
     transform: translateY(0%);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio-title {
     text-align: center;
     display: none;
@@ -1309,7 +1317,10 @@ button {
     padding: 20px 24px;
     text-decoration: none;
     border: 1px solid var(--card-border-color);
-    flex-grow: 1;
+    width: 354px;
+  }
+  .tablet-div {
+    padding: 20px 24px 56px;
   }
   .project-div-title {
     margin-bottom: 4px;
@@ -1329,9 +1340,7 @@ button {
     color: var(--secondary-color);
   }
   .project-link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    display: block;
   }
   .project-link:hover,
 .project-link:focus {
